@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Osatofo God's Children School - In God We Trust building character, and inspiring futures. Discover our exceptional educational programs and caring community for your children." />
+<head>
+  <title>Osatofo God's Children School | In God We Trust</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Feather Icons (only one version needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- Tailwind CSS (your local build) -->
+  <link rel="stylesheet" href="./tailwind.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body id="home" spellcheck="false">
+    <!-- Navigation -->
+<nav class="bg-white sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-3">
+    <div class="flex items-center justify-between">
+      
+      <!-- Logo + Name -->
+      <div class="flex items-center space-x-3">
+        <a href="index.html" class="flex items-center">
+          <img src="http://static.photos/education/200x200/1" 
+               alt="School Logo" 
+               class="h-12 w-12 rounded-full object-cover">
+<span class="ml-2 font-extrabold playfair leading-tight 
+             text-lg sm:text-xl md:text-2xl tracking-wide">
+  <span class="text-warm-brown">Osatofo</span> 
+  <br class="hidden sm:block"> 
+  <span class="text-peach">God’s</span> 
+  <span class="text-soft-blue">Children</span> 
+  <span class="text-light-orange">School</span>
+</span>
+        </a>
+      </div>
+      <!-- Desktop menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link text-gray-800 hover:text-warm-brown">Home</a>
+        <a href="#about" class="nav-link text-gray-800 hover:text-warm-brown">About</a>
+        <a href="admissions.html" class="nav-link text-gray-800 hover:text-warm-brown">Admissions</a>
+        <!-- <a href="#gallery" class="nav-link text-gray-800 hover:text-warm-brown">Gallery</a> -->
+        <a href="#testimonials" class="nav-link text-gray-800 hover:text-warm-brown">Testimonials</a>
+        <a href="#contact" class="nav-link text-gray-800 hover:text-warm-brown">Contact</a>
+      </div>
+
+      <!-- Hamburger (mobile only) -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-800 focus:outline-none cursor-pointer">
+          <i data-feather="menu"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+  <div class="flex flex-col space-y-4 px-6 py-4">
+    <a href="#home" class="nav-link text-gray-800 hover:text-warm-brown">Home</a>
+    <a href="#about" class="nav-link text-gray-800 hover:text-warm-brown">About</a>
+    <a href="admissions.html" class="nav-link text-gray-800 hover:text-warm-brown">Admissions</a>
+    <!-- <a href="#" class="nav-link text-gray-800 hover:text-warm-brown">Gallery</a> -->
+    <a href="#testimonials" class="nav-link text-gray-800 hover:text-warm-brown">Testimonials</a>
+    <a href="#contact" class="nav-link text-gray-800 hover:text-warm-brown">Contact</a>
+  </div>
+</div>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section py-20" id="vanta-globe">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 playfair text-warm-brown">
+                        In God We <span class="text-peach">Trust</span>
+                    </h1>
+                    <p class="text-lg mb-8 text-gray-700">
+ At Osatofo God’s Children School, we nurture young minds from nursery through primary 6, 
+  creating a joyful and caring place where every child learns, grows, and shines.
+                    </p>
+<div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+  <a href="#programs" 
+     class="w-full sm:w-auto text-center px-6 py-3 btn-primary text-white rounded-full">
+    Explore Programs
+  </a>
+  <a href="#admissions" 
+     class="w-full sm:w-auto text-center px-6 py-3 border-2 border-warm-brown text-warm-brown rounded-full hover:bg-warm-brown hover:text-white transition">
+    Apply
+  </a>
+</div>
+
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="images/img2.jpg" alt="Happy Children Learning" class="rounded-lg shadow-xl transform hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+<section id="about" class="py-20 bg-white">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+    
+    <!-- Image Side (Full View) -->
+    <div class="md:w-1/2" data-aos="fade-right">
+      <img src="images/img1.jpg" 
+           alt="Happy children learning" 
+           class="w-full h-full rounded-2xl shadow-xl object-cover transform hover:scale-105 transition duration-500">
+    </div>
+
+    <!-- Text Side -->
+    <div class="md:w-1/2" data-aos="fade-left">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 playfair text-warm-brown">
+        About Us
+      </h2>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        At <span class="font-semibold text-warm-brown">Osatofo God’s Children School</span>, 
+        we’ve been nurturing young learners from <strong>Nursery 1 through Primary 6</strong> 
+        with love, care, and excellence. Our goal is simple: to provide a joyful learning 
+        environment where every child feels valued and inspired to reach their full potential.
+      </p>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        With a strong foundation in academics, character, and creativity, our pupils are 
+        equipped not only for success in school, but also for life beyond the classroom. 
+        We believe education should be warm, exciting, and full of discovery.
+      </p>
+      <div class="flex space-x-4">
+        <a href="#programs" 
+           class="px-6 py-3 btn-primary text-white rounded-full shadow-md hover:shadow-lg">
+          Explore Classes
+        </a>
+        <a href="#contact" 
+           class="px-6 py-3 border-2 border-warm-brown text-warm-brown rounded-full hover:bg-warm-brown hover:text-white transition">
+          Contact Us
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Why Choose Osatofo?</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">
+  Learning at Osatofo is fun and exciting — we guide every child with love and 
+  curiosity, helping them shine in school and in life.
+</p>
+
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-peach mb-4">
+                        <i data-feather="award" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 playfair">Academic Excellence</h3>
+                    <p class="text-gray-600">Our curriculum is designed to challenge students while providing the support they need to excel.</p>
+                </div>
+                <div class="feature-card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-peach mb-4">
+                        <i data-feather="heart" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 playfair">Nurturing Environment</h3>
+                    <p class="text-gray-600">We create a warm, caring atmosphere where children feel safe to explore and grow.</p>
+                </div>
+                <div class="feature-card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-peach mb-4">
+                        <i data-feather="users" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 playfair">Experienced Educators</h3>
+                    <p class="text-gray-600">Our passionate teachers are dedicated to bringing out the best in every child.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+<section id="programs" class="py-20" style="background-color: var(--light-orange);">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Our Classes</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto">
+        From Nursery 1 to Primary 6, we provide age-appropriate learning that builds
+        strong foundations and inspires every child to grow with confidence.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Nursery -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/nursery classes.jpg" alt="Nursery Class" class="w-full h-70 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 playfair">Nursery classes( 1 - 2)</h3>
+          <p class="text-gray-600 mb-4">
+            Ages 2–5 | Play-based, creative learning that builds curiosity and social skills.
+          </p>
+          <a href="#" class="text-peach font-medium flex items-center">
+            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Kindergaten -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/kindergaten classes.jpg" alt="Kindergaten" class="w-full h-70 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 playfair">Kg classes( 1 - 2)</h3>
+          <p class="text-gray-600 mb-4">
+            Ages 2–5 | Play-based, creative learning that builds curiosity and social skills.
+          </p>
+          <a href="#" class="text-peach font-medium flex items-center">
+            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Lower Primary -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/lower primary.jpg" alt="Lower Primary" class="w-full h-70 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 playfair">Lower Primary (1–3)</h3>
+          <p class="text-gray-600 mb-4">
+            Ages 6–8 | Building literacy, numeracy, and a love for learning.
+          </p>
+          <a href="#" class="text-peach font-medium flex items-center">
+            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Upper Primary -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+        <img src="images/upper primary.jpg" alt="Upper Primary" class="w-full h-70 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 playfair">Upper Primary (4–6)</h3>
+          <p class="text-gray-600 mb-4">
+            Ages 9–11 | Preparing pupils with critical thinking, values, and confidence for future success.
+          </p>
+          <a href="#" class="text-peach font-medium flex items-center">
+            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white" id="testimonials">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">What Parents Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from families who have experienced the Osatofo difference.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/1" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mrs. Adebayo</h4>
+                            <p class="text-sm text-gray-500">Parent of Grade 3 Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The teachers at Osatofo genuinely care about each child's development. My daughter has flourished academically and socially since joining."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/2" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mr. Johnson</h4>
+                            <p class="text-sm text-gray-500">Parent of Preschooler</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The balance of play and learning is perfect. My son wakes up excited to go to school every morning. That says it all!"</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/3" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Dr. Okafor</h4>
+                            <p class="text-sm text-gray-500">Parent of Middle Schooler</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The critical thinking skills my child has developed at Osatofo are remarkable. The teachers challenge students while providing excellent support."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Admissions Section -->
+<section id="admissions" class="py-20" style="background-color: var(--soft-blue);">
+  <div class="container mx-auto px-6 max-w-3xl bg-white rounded-2xl shadow-xl p-8" data-aos="zoom-in">
+    
+    <!-- Heading -->
+    <div class="text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Admissions</h2>
+      <p class="text-gray-700">
+        Begin your child’s journey with us by filling out the form below. Our team will reach out to you shortly.
+      </p>
+    </div>
+
+    <!-- Form -->
+    <form action="#" method="POST" class="space-y-6">
+      
+      <!-- Parent Name -->
+      <div>
+        <label for="parent-name" class="block text-sm font-medium text-gray-700 mb-2">Full Name of Parent</label>
+        <input type="text" id="parent-name" name="parent-name" required
+               class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-warm-brown">
+      </div>
+      
+      <!-- Child Name -->
+      <div>
+        <label for="child-name" class="block text-sm font-medium text-gray-700 mb-2">Full Name of Child</label>
+        <input type="text" id="child-name" name="child-name" required
+               class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-warm-brown">
+      </div>
+      
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+        <input type="email" id="email" name="email" required
+               class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-warm-brown">
+      </div>
+      
+      <!-- WhatsApp -->
+      <div>
+        <label for="whatsapp" class="block text-sm font-medium text-gray-700 mb-2">WhatsApp Number</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+234 801 234 5678" required
+               class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-warm-brown">
+      </div>
+      
+      <!-- Select Class -->
+      <div>
+        <label for="class" class="block text-sm font-medium text-gray-700 mb-2">Select Class</label>
+        <select id="class" name="class" required
+                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-warm-brown cursor-pointer">
+          <option value="">Choose Class</option>
+          <option value="nursery1">Nursery Classes</option>
+          <option value="nursery3">Kg Classes</option>
+          <option value="primary1">Primary 1</option>
+          <option value="primary2">Primary 2</option>
+          <option value="primary3">Primary 3</option>
+          <option value="primary4">Primary 4</option>
+          <option value="primary5">Primary 5</option>
+          <option value="primary6">Primary 6</option>
+        </select>
+      </div>
+      
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" 
+                class="px-8 py-3 btn-primary text-white rounded-full shadow-md hover:shadow-lg transition cursor-pointer">
+          Submit Application
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 playfair text-white">Osatofo God's Children School</h3>
+                    <p class="text-white opacity-80">In God We Trust. Nurturing minds, building character, and inspiring futures since 2005.</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 playfair text-white">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Home</a></li>
+                        <li><a href="about.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">About Us</a></li>
+                        <li><a href="admissions.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Admissions</a></li>
+                        <li><a href="programs.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Programs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 playfair text-white">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Downloads</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 playfair text-white">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2 w-4 h-4 text-peach"></i>
+                            <span class="text-white opacity-80">6, Araomi Street, Anifowose, Ikeja, Lagos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2 w-4 h-4 text-peach"></i>
+                            <span class="text-white opacity-80">+234 803 581 4832</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2 w-4 h-4 text-peach"></i>
+                            <span class="text-white opacity-80">info@osatofoschool.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="clock" class="mr-2 w-4 h-4 text-peach"></i>
+                            <span class="text-white opacity-80">Mon-Fri: 8:00 AM - 4:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-white opacity-70">&copy; <span id="year"></span> Osatofo God's Children School. All rights reserved.</p>
+              <a href="https://oriarebun-princeton.vercel.app/" target="_blank"><p class="text-white opacity-70">Website Produced by Oriarebun Princeton</p></a>
+            </div>
+        </div>
+    </footer>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-8 right-8 btn-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 invisible opacity-0">
+  <i data-feather="arrow-up"></i>
+</button>
+<script src="main.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+            </script>
+</body>
+</html>

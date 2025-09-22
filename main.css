@@ -1,0 +1,77 @@
+@import "tailwindcss";
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --cream: #FFF9F0;
+            --light-orange: #FFD6A5;
+            --peach: #FFAAA5;
+            --soft-blue: #A5C4D4;
+            --warm-brown: #8B5A2B;
+        }
+        .text-warm-brown { color: var(--warm-brown); }
+.text-peach { color: var(--peach); }
+.text-soft-blue { color: var(--soft-blue); }
+.text-light-orange { color: var(--light-orange); }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--light-orange) 100%);
+        }
+        
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .btn-primary {
+            background: var(--warm-brown);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(139, 90, 43, 0.2);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-left: 4px solid var(--warm-brown);
+        }
+        
+        .footer {
+            background: var(--warm-brown);
+            color: white;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--warm-brown);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }

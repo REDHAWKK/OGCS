@@ -1,0 +1,23 @@
+{
+  "name": "ocgs",
+  "version": "1.0.0",
+  "description": "The official website for Osatofo's God Children School",
+  "keywords": [
+    "OCGS.",
+    "Osatofo",
+    "God's",
+    "Children"
+  ],
+  "license": "ISC",
+  "author": "Oriarebun Princeton",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./main.css -o ./tailwind.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}

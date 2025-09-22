@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Osatofo God's Children School</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --cream: #FFF9F0;
+            --light-orange: #FFD6A5;
+            --peach: #FFAAA5;
+            --soft-blue: #A5C4D4;
+            --warm-brown: #8B5A2B;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: #333;
+        }
+        
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .btn-primary {
+            background: var(--warm-brown);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(139, 90, 43, 0.2);
+        }
+        
+        .history-timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .history-timeline:before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--warm-brown);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--peach);
+            border: 3px solid var(--warm-brown);
+        }
+        
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--warm-brown);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <img src="http://static.photos/education/200x200/1" alt="School Logo" class="h-16 rounded-full">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold playfair text-warm-brown">Osatofo God's Children School</h1>
+                        <p class="text-sm text-gray-600">Nurturing Tomorrow's Leaders</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800 hover:text-warm-brown">Home</a>
+                    <a href="about.html" class="nav-link text-warm-brown font-medium">About</a>
+                    <a href="#" class="nav-link text-gray-800 hover:text-warm-brown">Admissions</a>
+                    <a href="#" class="nav-link text-gray-800 hover:text-warm-brown">Gallery</a>
+                    <a href="#" class="nav-link text-gray-800 hover:text-warm-brown">Testimonials</a>
+                    <a href="#" class="nav-link text-gray-800 hover:text-warm-brown">Contact</a>
+                    <a href="#" class="px-4 py-2 btn-primary text-white rounded-full">Enroll Now</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20" style="background: linear-gradient(135deg, var(--cream) 0%, var(--light-orange) 100%);">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 playfair text-warm-brown" data-aos="fade-up">Our Story</h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                For over 15 years, we've been dedicated to providing exceptional education in a nurturing environment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/education/640x360/20" alt="Children Learning" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 playfair text-warm-brown">Our Mission</h2>
+                    <p class="text-lg mb-6 text-gray-700">
+                        To provide a holistic education that develops intellectual, emotional, social, and physical potential in every child, preparing them to be responsible global citizens.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-peach mr-4 mt-1">
+                                <i data-feather="check-circle" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Academic Excellence</h3>
+                                <p class="text-gray-600">Rigorous curriculum tailored to individual learning styles.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-peach mr-4 mt-1">
+                                <i data-feather="check-circle" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Character Development</h3>
+                                <p class="text-gray-600">Instilling values of integrity, respect, and responsibility.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-peach mr-4 mt-1">
+                                <i data-feather="check-circle" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Creative Expression</h3>
+                                <p class="text-gray-600">Encouraging artistic, musical, and theatrical talents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="py-20" style="background-color: var(--soft-blue);">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Our Journey</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto">From humble beginnings to becoming a leader in childhood education.</p>
+            </div>
+            <div class="history-timeline max-w-3xl mx-auto">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-2 playfair">2005: Founding</h3>
+                    <p class="text-gray-700">Established with just 25 students in a small building, our vision was clear from the start - to create a school where every child feels valued.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-2 playfair">2010: First Expansion</h3>
+                    <p class="text-gray-700">Moved to our current campus to accommodate growing demand, adding dedicated science and art facilities.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold mb-2 playfair">2015: Accreditation</h3>
+                    <p class="text-gray-700">Received full accreditation from the National Education Board, recognizing our high standards.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-bold mb-2 playfair">2020: Digital Transformation</h3>
+                    <p class="text-gray-700">Implemented comprehensive digital learning tools while maintaining our commitment to hands-on education.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="text-xl font-bold mb-2 playfair">Today: Thriving Community</h3>
+                    <p class="text-gray-700">Now serving over 500 students with a reputation for academic excellence and character development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Meet Our Leadership</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Passionate educators dedicated to your child's success.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="http://static.photos/people/400x400/1" alt="Principal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1 playfair">Dr. Adeola Williams</h3>
+                        <p class="text-peach font-medium mb-3">Principal</p>
+                        <p class="text-gray-600 text-sm">With 20 years in education, Dr. Williams leads with vision and compassion.</p>
+                    </div>
+                </div>
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="http://static.photos/people/400x400/2" alt="Vice Principal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1 playfair">Mr. Femi Okafor</h3>
+                        <p class="text-peach font-medium mb-3">Vice Principal</p>
+                        <p class="text-gray-600 text-sm">Specializing in curriculum development and student welfare.</p>
+                    </div>
+                </div>
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="http://static.photos/people/400x400/3" alt="Head of Early Years" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1 playfair">Mrs. Chioma Eze</h3>
+                        <p class="text-peach font-medium mb-3">Head of Early Years</p>
+                        <p class="text-gray-600 text-sm">Expert in play-based learning and early childhood development.</p>
+                    </div>
+                </div>
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="http://static.photos/people/400x400/4" alt="Head of Elementary" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1 playfair">Mr. Tunde Balogun</h3>
+                        <p class="text-peach font-medium mb-3">Head of Elementary</p>
+                        <p class="text-gray-600 text-sm">Passionate about fostering curiosity and critical thinking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20" style="background-color: var(--light-orange);">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Our Core Values</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto">Guiding principles that shape everything we do.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-peach rounded-full flex items-center justify-center mx-auto">
+                            <i data-feather="heart" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 playfair text-center">Compassion</h3>
+                    <p class="text-gray-600 text-center">We cultivate empathy and kindness in all our interactions, creating a supportive community.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-peach rounded-full flex items-center justify-center mx-auto">
+                            <i data-feather="award" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 playfair text-center">Excellence</h3>
+                    <p class="text-gray-600 text-center">We strive for the highest standards in academics, character development, and personal growth.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-peach rounded-full flex items-center justify-center mx-auto">
+                            <i data-feather="users" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 playfair text-center">Community</h3>
+                    <p class="text-gray-600 text-center">We believe in the power of collaboration between students, staff, and families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12" style="background-color: var(--warm-brown); color: white;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 playfair text-white">Osatofo God's Children School</h3>
+                    <p class="text-white opacity-80">Nurturing minds, building character, and inspiring futures since 2005.</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 playfair text-white">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Home</a></li>
+                        <li><a href="about.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">About</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Admissions</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Programs</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 playfair text-white">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Calendar</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Parent Portal</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Downloads</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">FAQs</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 playfair text-white">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2 w-4 h-4 text-peach"></i>
+                            <span class="text-white opacity-80">123 Education Avenue, Lagos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2 w-4 h-4 text-peach"></i>
+                            <span class="text-white opacity-80">+234 812 345 6789</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2 w-4 h-4 text-peach"></i>
+                            <span class="text-white opacity-80">info@osatofoschool.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="clock" class="mr-2 w-4 h-4 text-peach"></i>
+                            <span class="text-white opacity-80">Mon-Fri: 8:00 AM - 4:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-white opacity-70">&copy; 2023 Osatofo God's Children School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Osatofo God's Children School</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --cream: #FFF9F0;
+            --light-orange: #FFD6A5;
+            --peach: #FFAAA5;
+            --soft-blue: #A5C4D4;
+            --warm-brown: #8B5A2B;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: #333;
+        }
+        
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .btn-primary {
+            background: var(--warm-brown);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(139, 90, 43, 0.2);
+        }
+        
+        .admission-step {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 30px;
+        }
+        
+        .admission-step:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--peach);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .admission-step.step-1:before { content: '1'; }
+        .admission-step.step-2:before { content: '2'; }
+        .admission-step.step-3:before { content: '3'; }
+        .admission-step.step-4:before { content: '4'; }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .faq-question {
+            padding: 15px 0;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .faq-question:after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 15px;
+            font-size: 1.5rem;
+            color: var(--warm-brown);
+        }
+        
+        .faq-question.active:after {
+            content: '-';
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-question.active + .faq-answer {
+            max-height: 500px;
+            padding-bottom: 15px;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--warm-brown);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <img src="http://static.photos/education/200x200/1" alt="School Logo" class="h-16 rounded-full">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold playfair text-warm-brown">Osatofo God's Children School</h1>
+                        <p class="text-sm text-gray-600">Nurturing Tomorrow's Leaders</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800 hover:text-warm-brown">Home</a>
+                    <a href="about.html" class="nav-link text-gray-800 hover:text-warm-brown">About</a>
+                    <a href="admissions.html" class="nav-link text-warm-brown font-medium">Admissions</a>
+                    <a href="#" class="nav-link text-gray-800 hover:text-warm-brown">Gallery</a>
+                    <a href="#" class="nav-link text-gray-800 hover:text-warm-brown">Testimonials</a>
+                    <a href="#" class="nav-link text-gray-800 hover:text-warm-brown">Contact</a>
+                    <a href="#" class="px-4 py-2 btn-primary text-white rounded-full">Enroll Now</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20" style="background: linear-gradient(135deg, var(--cream) 0%, var(--light-orange) 100%);">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 playfair text-warm-brown" data-aos="fade-up">Join Our Family</h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Begin your child's journey to academic excellence and personal growth at Osatofo God's Children School.
+            </p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Admission Process</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our straightforward process ensures a smooth transition for your child into our school community.</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="admission-step step-1" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-3 playfair">Inquiry & Tour</h3>
+                    <p class="text-gray-700">Begin by submitting an inquiry form or scheduling a school tour to experience our environment firsthand.</p>
+                </div>
+                <div class="admission-step step-2" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-3 playfair">Application Submission</h3>
+                    <p class="text-gray-700">Complete and submit the application form along with required documents (birth certificate, previous school records, etc.).</p>
+                </div>
+                <div class="admission-step step-3" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold mb-3 playfair">Assessment & Interview</h3>
+                    <p class="text-gray-700">Students participate in an age-appropriate assessment, followed by a family interview with our admissions team.</p>
+                </div>
+                <div class="admission-step step-4" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-bold mb-3 playfair">Admission Decision</h3>
+                    <p class="text-gray-700">Receive notification of admission status within two weeks of completing all steps.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="500">
+                <a href="#" class="px-8 py-3 btn-primary text-white rounded-full inline-block">Begin Application</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="py-20" style="background-color: var(--soft-blue);">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 playfair text-warm-brown">Requirements</h2>
+                    <p class="text-lg mb-8 text-gray-700">
+                        To ensure a smooth application process, please review the following requirements based on your child's grade level.
+                    </p>
+                    <img src="http://static.photos/education/640x360/30" alt="Children in Classroom" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 playfair text-warm-brown">All Applicants</h3>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Completed application form</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Birth certificate or passport</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Recent passport photograph</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Medical records (immunization history)</span>
+                            </li>
+                        </ul>
+                        
+                        <h3 class="text-xl font-bold mb-4 playfair text-warm-brown">Additional for Transfers</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Previous school reports (last 2 years)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Recommendation letter from previous school</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Transfer certificate (where applicable)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fees Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Tuition & Fees</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We strive to make quality education accessible with transparent pricing and flexible payment options.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-peach text-white p-6">
+                        <h3 class="text-xl font-bold mb-1 playfair">Early Years</h3>
+                        <p class="opacity-90">Ages 2-5</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold mb-4 text-warm-brown">₦250,000<span class="text-base font-normal">/term</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Includes all learning materials</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Daily nutritious snacks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Specialist classes (Music, PE)</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center px-4 py-2 border border-peach text-peach rounded-full hover:bg-peach hover:text-white transition">Learn More</a>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-warm-brown text-white p-6">
+                        <h3 class="text-xl font-bold mb-1 playfair">Elementary</h3>
+                        <p class="opacity-90">Grades 1-5</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold mb-4 text-warm-brown">₦300,000<span class="text-base font-normal">/term</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Comprehensive curriculum</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Technology integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Extracurricular activities</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center px-4 py-2 border border-peach text-peach rounded-full hover:bg-peach hover:text-white transition">Learn More</a>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-peach text-white p-6">
+                        <h3 class="text-xl font-bold mb-1 playfair">Middle School</h3>
+                        <p class="opacity-90">Grades 6-8</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold mb-4 text-warm-brown">₦350,000<span class="text-base font-normal">/term</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Advanced coursework</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">College preparation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-peach mr-2 mt-1"></i>
+                                <span class="text-gray-700">Leadership opportunities</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center px-4 py-2 border border-peach text-peach rounded-full hover:bg-peach hover:text-white transition">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-4 playfair text-center text-warm-brown">Financial Aid & Scholarships</h3>
+                <p class="text-gray-700 text-center mb-6">
+                    We offer need-based financial aid and merit scholarships to qualified students. Contact our admissions office for more information.
+                </p>
+                <div class="text-center">
+                    <a href="#" class="px-6 py-2 btn-primary text-white rounded-full inline-block">Financial Aid Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20" style="background-color: var(--light-orange);">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 playfair text-warm-brown">Frequently Asked Questions</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto">Find answers to common questions about admissions and enrollment.</p>
+            </div>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">What is the application deadline?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-700">We accept applications on a rolling basis, but priority is given to applications received by March 1st for the following academic year. Some grades may have limited availability later in the year.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Is there an entrance exam?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-700">For Early Years (ages 2-5), we conduct developmental readiness assessments rather than exams. For Elementary and Middle School, students complete age-appropriate assessments in core subjects to help us understand their learning needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Do you offer after-school care?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-700">Yes, we offer extended care until 6:00 PM for an additional fee. This includes homework help, supervised play, and snack time.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">What is your student-to-teacher ratio?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-700">Our average class size is 18 students with a student-to-teacher ratio of 8:1 in Early Years and 12:1 in Elementary and Middle School.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-bold">Do you accept mid-year transfers?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-700">Yes, we consider mid-year transfers based on availability. The application process is the same, and we work closely with transferring students to ensure a smooth transition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 playfair text-warm-brown">Ready to Begin?</h2>
+                <p class="text-lg mb-8 text-gray-700">Start your child's journey at Osatofo God's Children School today. Our admissions team is here to guide you every step of the way.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="px-8 py-3 btn-primary text-white rounded-full">Start Application</a>
+                    <a href="#" class="px-8 py-3 border-2 border-warm-brown text-warm-brown rounded-full hover:bg-warm-brown hover:text-white transition">Schedule Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12" style="background-color: var(--warm-brown); color: white;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 playfair text-white">Osatofo God's Children School</h3>
+                    <p class="text-white opacity-80">Nurturing minds, building character, and inspiring futures since 2005.</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-white hover:text-peach"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 playfair text-white">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Home</a></li>
+                        <li><a href="about.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">About</a></li>
+                        <li><a href="admissions.html" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Admissions</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Programs</a></li>
+                        <li><a href="#" class="text-white opacity-80 hover:opacity-100 hover:text-peach">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 playfair text-white">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white
+</body>
+</html>
