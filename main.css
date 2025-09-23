@@ -105,3 +105,42 @@
         .nav-link:hover:after {
             width: 100%;
         }
+        .history-timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .history-timeline:before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--warm-brown);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--peach);
+            border: 3px solid var(--warm-brown);
+        }
+        
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
