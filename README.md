@@ -1,2 +1,2 @@
 # OGCS
-The official website for the school Osatof God's Children School.
+The official website for the school Osatofo God's Children School.
