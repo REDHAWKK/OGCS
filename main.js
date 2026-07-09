@@ -28,25 +28,26 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-    // Back to top button
-    const backToTopButton = document.getElementById('back-to-top');
-    if (backToTopButton) {
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0', 'invisible');
-                backToTopButton.classList.add('opacity-100', 'visible');
-            } else {
-                backToTopButton.classList.remove('opacity-100', 'visible');
-                backToTopButton.classList.add('opacity-0', 'invisible');
-            }
-        });
+    /* ===============================
+       BACK TO TOP
+    =============================== */
+    const backToTop = document.createElement("button");
+    backToTop.innerHTML = '<i data-feather="arrow-up"></i>';
+    backToTop.className =
+        "fixed bottom-8 right-8 btn-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg   hidden";
 
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+    document.body.appendChild(backToTop);
+
+    window.addEventListener("scroll", () => {
+        backToTop.classList.toggle("hidden", window.scrollY < 300);
+    });
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    if (window.feather) {
+        feather.replace();
     }
     // Current year
     const yearElement = document.getElementById("year");
@@ -55,3 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        const navbar = document.getElementById("navbar");
+
+        function handleNavbar() {
+            if (window.scrollY > 20) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        }
+        
+        handleNavbar(); // Handles page refresh while already scrolled
+        
+        window.addEventListener("scroll", handleNavbar);
